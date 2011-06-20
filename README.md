@@ -12,6 +12,10 @@ Features
 * Adds an entry to the addon menu to visit [the web service](http://redirectcheck.koeniglich.ch "Redirect Check Service") to check any URL.
 * Source code publicly available on GitHub: [pstadler/ff-redirectcheck-client](https://github.com/pstadler/ff-redirectcheck-client "Redirect Check Client for Firefox on GitHub")
 
+Screenshot
+-------
+![Redirect Check Client for Firefox](https://static-cdn.addons.mozilla.net/img/uploads/previews/full/59/59458.png?modified=1308581843 "Redirect Check Client for Firefox")
+
 License
 -------
 Redirect Check Client is released under the MIT license.
