@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<overlay id="redirectcheck-client-overlay" xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+	<script type="application/x-javascript" src="chrome://redirectcheck-client/content/redirectcheck-client.js" />
+	
+	<popup id="contentAreaContextMenu">
+		<menuitem id="redirectcheck-menuitem" label="Check HTTP Status Code"
+			oncommand="RedirectCheckClient.getStatusCode();" class="menuitem-iconic"
+			insertafter="context-selectall" image="chrome://redirectcheck-client/content/icon.png" />
+	</popup>
+	
+	<menupopup id="menu_ToolsPopup">
+		<menuitem label="Check HTTP Status Code..."
+			oncommand="RedirectCheckClient.openService();"
+			class="menuitem-iconic" insertbefore="sanitizeSeparator"
+			image="chrome://redirectcheck-client/content/icon.png" />
+	</menupopup>
+</overlay>

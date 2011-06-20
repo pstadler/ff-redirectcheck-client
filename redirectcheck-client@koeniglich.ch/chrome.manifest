@@ -1,0 +1,2 @@
+content redirectcheck-client chrome/content/
+overlay	chrome://browser/content/browser.xul chrome://redirectcheck-client/content/redirectcheck-client.xul

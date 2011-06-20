@@ -1,0 +1,1 @@
+pref('extensions.redirectcheck-client.service.uri', 'http://redirectcheck.koeniglich.ch');

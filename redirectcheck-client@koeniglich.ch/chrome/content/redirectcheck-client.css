@@ -1,0 +1,89 @@
+@namespace url(http://www.w3.org/1999/xhtml);
+@-moz-document url-prefix(http://), url-prefix(https://), url-prefix(file://) {
+
+	.redirectcheck-client-tip {
+		color: white !important;
+		background-color: #1A384F !important;
+		position: absolute !important;
+		padding: 2px 5px !important;
+		margin: 0 !important;
+		border: 1px solid white !important;
+		font: 11px arial,sans-serif !important;
+		width: auto !important;
+		height: auto !important;
+		cursor: pointer !important;
+		z-index: 2147483646 !important; /* max z-index -1*/
+		box-shadow: 0 0 3px 1px #333;
+	}
+	
+	.redirectcheck-client-tip:hover {
+		z-index: 2147483647 !important; /* max z-index */
+	}
+	
+	.redirectcheck-client-tip-arrow, .redirectcheck-client-tip-arrow-border {
+		border: 6px solid transparent !important;
+		height: 0 !important;
+		width: 0 !important;
+		position: absolute !important;
+		left: 1px !important;
+	}
+	
+	.redirectcheck-client-tip[data-alignment='top'] .redirectcheck-client-tip-arrow {
+		border-top-color: #1A384F !important;
+		bottom: -12px !important;
+	}
+	
+	.redirectcheck-client-tip[data-alignment='bottom'] .redirectcheck-client-tip-arrow {
+		border-bottom-color: #1A384F !important;
+		top: -12px !important;
+	}
+	
+	.redirectcheck-client-tip[data-alignment='top'] .redirectcheck-client-tip-arrow-border {
+		border-top-color: white !important;
+	  bottom: -13px !important;
+	}
+	
+	.redirectcheck-client-tip[data-alignment='bottom'] .redirectcheck-client-tip-arrow-border {
+		border-bottom-color: white !important;
+	  top: -13px !important;
+	}
+	
+	.redirectcheck-client-tip[data-status='200'] {
+		background-color: #137a32 !important;
+	}
+	.redirectcheck-client-tip[data-status='301'] {
+		background-color: #ffd000 !important; color: black !important;
+	}
+	.redirectcheck-client-tip[data-status='302'] {
+		background-color: #ff9400 !important; color: black !important;
+	}
+	.redirectcheck-client-tip[data-status='404'] {
+		background-color: #aa1512 !important;
+	}
+	
+	.redirectcheck-client-tip[data-status='200'] .redirectcheck-client-tip-arrow { 
+		border-color: #137a32 !important;
+	}
+	.redirectcheck-client-tip[data-status='301'] .redirectcheck-client-tip-arrow {
+		border-color: #ffd000 !important; color: black !important;
+	}
+	.redirectcheck-client-tip[data-status='302'] .redirectcheck-client-tip-arrow {
+		border-color: #ff9400 !important; color: black !important;
+	}
+	.redirectcheck-client-tip[data-status='404'] .redirectcheck-client-tip-arrow {
+		border-color: #aa1512 !important;
+	}
+	
+	.redirectcheck-client-tip[data-alignment='top'] .redirectcheck-client-tip-arrow { 
+		border-bottom-color: transparent !important;
+		border-left-color: transparent !important;
+		border-right-color: transparent !important;
+	}
+	
+	.redirectcheck-client-tip[data-alignment='bottom'] .redirectcheck-client-tip-arrow {
+		border-top-color: transparent !important;
+		border-left-color: transparent !important;
+		border-right-color: transparent !important;
+	}
+
+}
