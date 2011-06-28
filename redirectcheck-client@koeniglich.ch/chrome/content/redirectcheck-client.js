@@ -103,7 +103,8 @@ var RedirectCheckClient = {
 			tip.style.left = posX + 'px';
 
 			tip.addEventListener('click', function(e) {
-				window._content.document.body.removeChild(this); e.stopPropagation();
+				window._content.document.getElementsByTagName("html")[0].removeChild(this);
+				e.stopPropagation();
 			}, true);
 			
 		} else {
